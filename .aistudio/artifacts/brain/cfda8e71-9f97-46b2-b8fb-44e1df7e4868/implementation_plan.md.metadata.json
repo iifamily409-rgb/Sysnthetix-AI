@@ -1,0 +1,6 @@
+{
+  "summary":  "Implementation plan to add custom AI providers (Gemini, OpenRouter, OpenAI, Anthropic, Groq, and Custom Base URL), direct model ID entry, visible/toggleable API keys with localStorage persistence, customizable user profile name, and backend proxy streaming support for all providers.",
+  "updatedAt":  "2026-11-11T12:08:20.182158393Z",
+  "requestFeedback":  true,
+  "userFacing":  true
+}

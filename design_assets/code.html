@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "on-primary-fixed": "#07006c",
+          "tertiary-fixed": "#d8e2ff",
+          "secondary-fixed": "#e9ddff",
+          "on-tertiary-fixed": "#001a42",
+          "surface-tint": "#494bd6",
+          "on-primary": "#ffffff",
+          "surface-container-highest": "#dce2f7",
+          "on-tertiary": "#ffffff",
+          "surface-container-lowest": "#ffffff",
+          "on-secondary-container": "#fffbff",
+          "on-background": "#141b2b",
+          "tertiary": "#0058be",
+          "on-tertiary-container": "#fefcff",
+          "tertiary-fixed-dim": "#adc6ff",
+          "on-primary-fixed-variant": "#2f2ebe",
+          "background": "#f9f9ff",
+          "secondary-fixed-dim": "#d0bcff",
+          "primary-container": "#6063ee",
+          "surface-bright": "#f9f9ff",
+          "primary-fixed-dim": "#c0c1ff",
+          "tertiary-container": "#2170e4",
+          "error-container": "#ffdad6",
+          "on-surface-variant": "#464554",
+          "on-secondary": "#ffffff",
+          "outline": "#767586",
+          "outline-variant": "#c7c4d7",
+          "surface-dim": "#d3daef",
+          "surface-container": "#e9edff",
+          "on-secondary-fixed": "#23005c",
+          "surface": "#f9f9ff",
+          "surface-container-high": "#e1e8fd",
+          "secondary": "#6b38d4",
+          "error": "#ba1a1a",
+          "inverse-on-surface": "#edf0ff",
+          "on-secondary-fixed-variant": "#5516be",
+          "on-error-container": "#93000a",
+          "inverse-primary": "#c0c1ff",
+          "on-error": "#ffffff",
+          "inverse-surface": "#293040",
+          "on-surface": "#141b2b",
+          "on-primary-container": "#fffbff",
+          "on-tertiary-fixed-variant": "#004395",
+          "surface-container-low": "#f1f3ff",
+          "primary-fixed": "#e1e0ff",
+          "secondary-container": "#8455ef",
+          "primary": "#4648d4",
+          "surface-variant": "#dce2f7"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "margin": "2rem",
+          "gutter-sm": "1rem",
+          "space-md": "1rem",
+          "space-lg": "1.5rem",
+          "space-xl": "2.5rem",
+          "margin-sm": "1rem",
+          "space-sm": "0.5rem",
+          "gutter": "1.5rem",
+          "space-xs": "0.25rem"
+        },
+        "fontFamily": {
+          "body-md": [
+            "Inter"
+          ],
+          "label-xs": [
+            "Inter"
+          ],
+          "display-hero": [
+            "Inter"
+          ],
+          "headline-sm": [
+            "Inter"
+          ],
+          "label-md": [
+            "Inter"
+          ],
+          "title-md": [
+            "Inter"
+          ],
+          "body-sm": [
+            "Inter"
+          ],
+          "display-hero-mobile": [
+            "Inter"
+          ],
+          "headline-lg": [
+            "Inter"
+          ],
+          "body-lg": [
+            "Inter"
+          ],
+          "headline-md": [
+            "Inter"
+          ]
+        },
+        "fontSize": {
+          "body-md": [
+            "14px",
+            {
+              "lineHeight": "22px",
+              "letterSpacing": "0em",
+              "fontWeight": "400"
+            }
+          ],
+          "label-xs": [
+            "11px",
+            {
+              "lineHeight": "14px",
+              "letterSpacing": "0.03em",
+              "fontWeight": "600"
+            }
+          ],
+          "display-hero": [
+            "40px",
+            {
+              "lineHeight": "48px",
+              "letterSpacing": "-0.025em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-sm": [
+            "18px",
+            {
+              "lineHeight": "26px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "label-md": [
+            "12px",
+            {
+              "lineHeight": "16px",
+              "letterSpacing": "0.01em",
+              "fontWeight": "500"
+            }
+          ],
+          "title-md": [
+            "16px",
+            {
+              "lineHeight": "24px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "500"
+            }
+          ],
+          "body-sm": [
+            "13px",
+            {
+              "lineHeight": "18px",
+              "letterSpacing": "0em",
+              "fontWeight": "400"
+            }
+          ],
+          "display-hero-mobile": [
+            "30px",
+            {
+              "lineHeight": "38px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-lg": [
+            "28px",
+            {
+              "lineHeight": "36px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "600"
+            }
+          ],
+          "body-lg": [
+            "16px",
+            {
+              "lineHeight": "26px",
+              "letterSpacing": "-0.005em",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-md": [
+            "22px",
+            {
+              "lineHeight": "30px",
+              "letterSpacing": "-0.015em",
+              "fontWeight": "600"
+            }
+          ]
+        }
+      },
+    },
+  }</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-low shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between overflow-hidden"><div class="flex flex-col h-full overflow-hidden"><div class="p-space-md flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="Synthetix AI Brand Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrCyGMP3AlZGPoq24df3SCkcs4Xen-FnJ_2s9loHwiOXmReUSD9bO3TD-y7PCpQqLp0R4f-Do-duXJyen8ci2nmyDWwQD_ABLpt2oFs9hS5fXq1j9_7hs-ge5IuyPmNi3PBswPhVE1gJ0AjQADbE0mFjJXhX9jlMB2D7NuLXYQdbBQTtcp3ii_arYR3goj4LautfpTmPH91bwmfuC64vj8RbGvn5mB2Nu3Jkiu0dupU"/><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight">Synthetix AI</span></div><span class="font-label-xs text-label-xs bg-primary-fixed text-on-primary-fixed px-space-xs py-0.5 rounded-full">v2.4</span></div><div class="px-space-md pb-space-sm"><button class="w-full flex items-center justify-between px-space-md py-space-sm rounded-lg bg-gradient-to-r from-primary to-secondary hover:brightness-110 text-on-primary font-label-md text-label-md shadow-[0_4px_14px_rgba(70,72,212,0.25)] transition-all" type="button"><span class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[18px]">add</span>New Chat</span><span class="px-space-xs py-0.5 rounded bg-surface/20 text-on-primary font-label-xs text-label-xs">⌘K</span></button></div><div class="flex-1 overflow-y-auto px-space-md py-space-sm space-y-space-md"><div class="space-y-space-xs"><div class="font-label-xs text-label-xs text-on-surface-variant uppercase tracking-wider px-space-sm">Today</div><div class="space-y-0.5"><div class="group flex items-center justify-between px-space-sm py-space-sm rounded-lg bg-surface-container text-on-surface transition-colors cursor-pointer"><span class="font-body-sm text-body-sm truncate pr-space-xs">Q3 Product Strategy Memo</span><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[16px] text-on-surface-variant hover:text-on-surface">more_vert</span></div></div><div class="group flex items-center justify-between px-space-sm py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors cursor-pointer"><span class="font-body-sm text-body-sm truncate pr-space-xs">React Tailwind Architecture</span><div class="hidden group-hover:flex items-center gap-space-xs"><span class="material-symbols-outlined text-[16px] text-on-surface-variant hover:text-on-surface">more_vert</span></div></div></div></div><div class="space-y-space-xs"><div class="font-label-xs text-label-xs text-on-surface-variant uppercase tracking-wider px-space-sm">Yesterday</div><div class="space-y-0.5"><div class="group flex items-center justify-between px-space-sm py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors cursor-pointer"><span class="font-body-sm text-body-sm truncate pr-space-xs">Neural Semantic Search API</span><div class="hidden group-hover:flex items-center gap-space-xs"><span class="material-symbols-outlined text-[16px] text-on-surface-variant hover:text-on-surface">more_vert</span></div></div><div class="group flex items-center justify-between px-space-sm py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors cursor-pointer"><span class="font-body-sm text-body-sm truncate pr-space-xs">Creative Copywriting Brainstorm</span><div class="hidden group-hover:flex items-center gap-space-xs"><span class="material-symbols-outlined text-[16px] text-on-surface-variant hover:text-on-surface">more_vert</span></div></div></div></div><div class="space-y-space-xs"><div class="font-label-xs text-label-xs text-on-surface-variant uppercase tracking-wider px-space-sm">Previous 7 Days</div><div class="space-y-0.5"><div class="group flex items-center justify-between px-space-sm py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors cursor-pointer"><span class="font-body-sm text-body-sm truncate pr-space-xs">Postgres Vector DB Indexing</span><div class="hidden group-hover:flex items-center gap-space-xs"><span class="material-symbols-outlined text-[16px] text-on-surface-variant hover:text-on-surface">more_vert</span></div></div></div></div></div><div class="p-space-sm bg-surface-container-low"><nav class="space-y-0.5" data-active-classes="bg-surface-container-high text-on-surface font-medium"><a aria-current="page" class="flex items-center justify-between px-space-sm py-space-sm rounded-lg transition-colors bg-surface-container-high text-on-surface font-medium" data-path="chat-workspace" href="#"><span class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[18px]">chat_bubble</span><span class="font-body-sm text-body-sm">Home</span></span></a><a class="flex items-center justify-between px-space-sm py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="explore-models" href="#"><span class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[18px]">grid_view</span><span class="font-body-sm text-body-sm">Explore Models &amp; GPTs</span></span><span class="font-label-xs text-label-xs bg-surface-container-highest text-on-surface-variant px-space-xs py-0.5 rounded-full">24</span></a><a class="flex items-center justify-between px-space-sm py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="settings" href="#"><span class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[18px]">settings</span><span class="font-body-sm text-body-sm">Settings</span></span></a><a class="flex items-center justify-between px-space-sm py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="documentation" href="#"><span class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[18px]">menu_book</span><span class="font-body-sm text-body-sm">Documentation &amp; Help</span></span></a></nav></div><div class="p-space-sm bg-surface-container-low"><div class="flex items-center justify-between p-space-sm rounded-xl bg-surface-container hover:bg-surface-container-high transition-colors cursor-pointer"><div class="flex items-center gap-space-sm min-w-0"><img alt="Profile" class="w-8 h-8 rounded-full object-cover shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDflXBo7PUaOMHr2KOTBPJWXN6eDIeM-CWNycII7GAgd8-6XQtFWkk6I8Hi4EVlFFm8I_Y0j1bG-DxK-fAhyiBxhs3CV5ngEPY2EBUSDuZIWHsNl9macQE8OSXOn6J9kSHMczpqJIj7xpbsl3aBarLL6dYuCLX0bH4bXJPo1KsfaFZbQT2ABoDuV-vcuKElFji9JQ_jcM8eWJf5CSRXlm5rrhx1hBuEPTYwaqLXrA"/><div class="min-w-0"><div class="flex items-center gap-space-xs"><span class="font-body-sm text-body-sm font-medium text-on-surface truncate">Elena Vance</span><span class="font-label-xs text-label-xs px-1.5 py-0.2 rounded-full bg-gradient-to-r from-secondary-container to-primary text-on-secondary font-semibold">Pro</span></div><div class="font-label-xs text-label-xs text-on-surface-variant truncate">elena@synthetix.ai</div></div></div><span class="material-symbols-outlined text-on-surface-variant text-[18px]">unfold_more</span></div></div></div></aside><div class="pl-72 flex flex-col min-h-screen"><header class="fixed top-0 left-72 right-0 h-16 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-gutter"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-sm"><span class="font-title-md text-title-md text-on-surface">Q3 Product Strategy &amp; Execution</span><span class="material-symbols-outlined text-on-surface-variant text-[18px] cursor-pointer hover:text-on-surface">edit</span></div><div class="flex items-center gap-space-xs px-space-sm py-1 rounded-full bg-surface-container cursor-pointer hover:bg-surface-container-high transition-colors"><span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span><span class="font-label-md text-label-md text-on-surface">Synthetix 4.5 Sonnet</span><span class="material-symbols-outlined text-[16px] text-on-surface-variant">expand_more</span></div><div class="hidden lg:flex items-center gap-1.5 text-on-surface-variant"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span><span class="font-label-xs text-label-xs">Online (24ms latency)</span></div></div><div class="flex items-center gap-space-sm"><button class="w-9 h-9 rounded-lg flex items-center justify-center text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" title="New Conversation" type="button"><span class="material-symbols-outlined text-[20px]">chat</span></button><button class="flex items-center gap-space-xs px-space-sm py-1.5 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-label-md text-label-md" type="button"><span class="material-symbols-outlined text-[18px]">ios_share</span>Share</button><div class="flex items-center p-0.5 rounded-lg bg-surface-container"><button class="p-1 rounded-md bg-surface text-primary shadow-[0_1px_2px_rgba(0,0,0,0.05)]" title="Light Mode" type="button"><span class="material-symbols-outlined text-[16px]">light_mode</span></button><button class="p-1 rounded-md text-on-surface-variant hover:text-on-surface" title="Dark Mode" type="button"><span class="material-symbols-outlined text-[16px]">dark_mode</span></button></div><div class="flex items-center gap-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-surface-container-highest cursor-pointer" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDflXBo7PUaOMHr2KOTBPJWXN6eDIeM-CWNycII7GAgd8-6XQtFWkk6I8Hi4EVlFFm8I_Y0j1bG-DxK-fAhyiBxhs3CV5ngEPY2EBUSDuZIWHsNl9macQE8OSXOn6J9kSHMczpqJIj7xpbsl3aBarLL6dYuCLX0bH4bXJPo1KsfaFZbQT2ABoDuV-vcuKElFji9JQ_jcM8eWJf5CSRXlm5rrhx1hBuEPTYwaqLXrA"/></div></div></header><main class="w-full pt-16 bg-surface flex-1"><div class="flex flex-col w-full">
+<div class="w-full max-w-5xl mx-auto px-margin-sm lg:px-margin pt-space-lg pb-36 flex flex-col space-y-space-xl">
+<!-- Hero / Welcome Onboarding Surface -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container-low p-space-lg lg:p-space-xl shadow-sm flex flex-col items-center text-center">
+<div class="absolute -top-24 left-1/2 -translate-x-1/2 w-96 h-96 bg-primary/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute -bottom-24 right-10 w-72 h-72 bg-secondary/10 rounded-full blur-2xl pointer-events-none"></div>
+<!-- Glowing AI Orb Badge -->
+<div class="relative flex items-center justify-center mb-space-md">
+<div class="absolute -inset-1 rounded-full bg-gradient-to-tr from-primary via-secondary to-tertiary opacity-40 blur-md animate-pulse"></div>
+<div class="relative w-14 h-14 rounded-full bg-surface flex items-center justify-center shadow-md">
+<div class="w-10 h-10 rounded-full bg-gradient-to-tr from-primary to-secondary flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined text-[24px]">auto_awesome</span>
+</div>
+</div>
+</div>
+<!-- Welcome Headings -->
+<div class="space-y-space-xs max-w-2xl">
+<div class="inline-flex items-center gap-space-xs px-space-sm py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-xs text-label-xs uppercase tracking-wider mb-space-xs">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-ping"></span>
+          Synthetix Engine v2.4 Active
+        </div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">
+          Hello, Elena! How can I <span class="bg-gradient-to-r from-primary via-secondary to-tertiary bg-clip-text text-transparent">help you today?</span>
+</h1>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Your AI assistant is ready to write, analyze, ideate, and code with multimodal reasoning and live sandbox validation.
+        </p>
+</div>
+<!-- 4 Quick Suggestion Prompt Cards -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-sm w-full mt-space-lg text-left">
+<!-- Prompt 1 -->
+<button class="group flex flex-col justify-between p-space-md rounded-xl bg-surface hover:bg-surface-container-high shadow-sm transition-all duration-200 cursor-pointer text-left" type="button">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="w-9 h-9 rounded-lg bg-primary-fixed flex items-center justify-center text-on-primary-fixed">
+<span class="material-symbols-outlined text-[20px]">draw</span>
+</div>
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform">north_east</span>
+</div>
+<div>
+<div class="font-title-md text-title-md text-on-surface font-semibold mb-0.5">Write something</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">Draft an executive summary or launch email announcement.</div>
+</div>
+</button>
+<!-- Prompt 2 -->
+<button class="group flex flex-col justify-between p-space-md rounded-xl bg-surface hover:bg-surface-container-high shadow-sm transition-all duration-200 cursor-pointer text-left" type="button">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="w-9 h-9 rounded-lg bg-tertiary-fixed flex items-center justify-center text-on-tertiary-fixed">
+<span class="material-symbols-outlined text-[20px]">psychology</span>
+</div>
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform">north_east</span>
+</div>
+<div>
+<div class="font-title-md text-title-md text-on-surface font-semibold mb-0.5">Explain a topic</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">Break down quantum entanglement or transformer attention.</div>
+</div>
+</button>
+<!-- Prompt 3 -->
+<button class="group flex flex-col justify-between p-space-md rounded-xl bg-surface hover:bg-surface-container-high shadow-sm transition-all duration-200 cursor-pointer text-left" type="button">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="w-9 h-9 rounded-lg bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed">
+<span class="material-symbols-outlined text-[20px]">lightbulb</span>
+</div>
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform">north_east</span>
+</div>
+<div>
+<div class="font-title-md text-title-md text-on-surface font-semibold mb-0.5">Generate ideas</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">Brainstorm viral hooks and positioning angles for our SaaS launch.</div>
+</div>
+</button>
+<!-- Prompt 4 -->
+<button class="group flex flex-col justify-between p-space-md rounded-xl bg-surface hover:bg-surface-container-high shadow-sm transition-all duration-200 cursor-pointer text-left" type="button">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="w-9 h-9 rounded-lg bg-surface-container-highest flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">code</span>
+</div>
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform">north_east</span>
+</div>
+<div>
+<div class="font-title-md text-title-md text-on-surface font-semibold mb-0.5">Code &amp; optimize</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">Refactor a TypeScript custom Hook or optimize vector queries.</div>
+</div>
+</button>
+</div>
+</div>
+<!-- Active Conversation Timeline Stream -->
+<div class="space-y-space-lg w-full">
+<!-- Thread Item 1: User Request -->
+<div class="flex items-start justify-end gap-space-sm group">
+<div class="flex flex-col items-end max-w-2xl">
+<div class="flex items-center gap-space-xs mb-1">
+<span class="font-label-xs text-label-xs text-on-surface-variant">You</span>
+<span class="text-on-surface-variant font-label-xs text-label-xs">• 10:42 AM</span>
+</div>
+<div class="bg-surface-container px-space-md py-space-sm rounded-2xl rounded-tr-sm shadow-sm text-on-surface font-body-md text-body-md">
+            Can you analyze our retention cohort data and generate a Python script with Seaborn to plot weekly active users against churn rate? Please add best practices.
+          </div>
+</div>
+<img class="w-8 h-8 rounded-full object-cover shadow-sm shrink-0 mt-6" data-alt="Close up professional portrait of Elena Vance smiling with a clean soft studio lighting and dark navy backdrop" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCApe--pz4kiXY8ULd1FzYs1vyVkeBJI5qNx8ZTfobvVMMszpV_ryoZrN-lvu7mbxS6-vkI72SC_GIDyklORzAgbybrfSH1GOiFIfYQIt1RqirzgWfdCd1SIZU7jykgmYExtALQ2XPvRB_QpwAMz2Nfx0gSbd5mG34K7PYflrb_CXtzKPJTWKR6lIcaX75mI0vywnr6XceEWfHGEkzaEUSxNwiGRrJzpki4W-85hA"/>
+</div>
+<!-- Thread Item 2: AI Synthetix Full Rich Response -->
+<div class="flex items-start gap-space-sm group">
+<div class="relative shrink-0 mt-1">
+<div class="w-9 h-9 rounded-full bg-gradient-to-tr from-primary to-secondary flex items-center justify-center text-on-primary shadow-sm ring-4 ring-primary-fixed/40">
+<span class="material-symbols-outlined text-[18px]">neurology</span>
+</div>
+</div>
+<div class="flex-1 min-w-0 space-y-space-md">
+<!-- Model Meta Header -->
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="font-title-md text-title-md font-semibold text-on-surface">Synthetix 4.5 Sonnet</span>
+<span class="px-space-xs py-0.5 rounded-full bg-surface-container-high font-label-xs text-label-xs text-on-surface-variant">1.2s</span>
+<span class="font-label-xs text-label-xs text-on-surface-variant">• 10:43 AM</span>
+</div>
+<div class="flex items-center gap-1 opacity-70 group-hover:opacity-100 transition-opacity">
+<span class="font-label-xs text-label-xs text-on-surface-variant px-2 py-0.5 rounded bg-surface-container">Code Execution Verified</span>
+</div>
+</div>
+<!-- Structured Markdown Content & Key Insights Callout -->
+<div class="space-y-space-sm font-body-md text-body-md text-on-surface">
+<p>
+              I have evaluated your weekly active cohort telemetry. When plotting weekly active users (<strong class="font-semibold text-on-surface">WAU</strong>) against churn rate, using a dual-axis layout or dual-facet grid prevents scale skew. 
+            </p>
+<!-- Key Insights Card -->
+<div class="rounded-xl p-space-md bg-gradient-to-r from-surface-container to-surface-container-high shadow-sm space-y-space-xs">
+<div class="flex items-center gap-space-xs text-primary font-title-md text-title-md font-semibold">
+<span class="material-symbols-outlined text-[20px]">insights</span>
+                Key Statistical Insights
+              </div>
+<ul class="space-y-1 font-body-sm text-body-sm text-on-surface-variant list-disc list-inside">
+<li><strong class="font-semibold text-on-surface">Inverted Knee Point:</strong> Churn drops below 4.2% once weekly active duration surpasses 3 sessions per user.</li>
+<li><strong class="font-semibold text-on-surface">Cohort Stability:</strong> Week 4 to Week 8 retention curves normalize into a steady power-law retention plateau.</li>
+<li><strong class="font-semibold text-on-surface">Standardization:</strong> Using z-score normalization on both axes highlights divergence anomalies earlier.</li>
+</ul>
+</div>
+<p>
+              Below is the production-ready script utilizing <code class="px-1.5 py-0.5 rounded bg-surface-container-highest text-primary font-label-md text-label-md">seaborn</code>, <code class="px-1.5 py-0.5 rounded bg-surface-container-highest text-primary font-label-md text-label-md">matplotlib</code>, and <code class="px-1.5 py-0.5 rounded bg-surface-container-highest text-primary font-label-md text-label-md">pandas</code>:
+            </p>
+</div>
+<!-- Rich Syntax-Highlighted Code Artifact Block -->
+<div class="rounded-xl overflow-hidden bg-inverse-surface shadow-md">
+<div class="flex items-center justify-between px-space-md py-space-xs bg-inverse-surface/90 text-inverse-on-surface">
+<div class="flex items-center gap-space-xs font-label-md text-label-md">
+<span class="w-3 h-3 rounded-full bg-error/80 inline-block"></span>
+<span class="w-3 h-3 rounded-full bg-amber-400 inline-block"></span>
+<span class="w-3 h-3 rounded-full bg-emerald-500 inline-block"></span>
+<span class="ml-space-xs text-inverse-on-surface/80">cohort_retention_visualizer.py</span>
+<span class="ml-2 px-1.5 py-0.5 rounded text-[10px] font-label-xs uppercase tracking-wider bg-surface-container-highest/20 text-inverse-on-surface">Python 3.11</span>
+</div>
+<button class="flex items-center gap-1 px-space-xs py-1 rounded hover:bg-surface-container-highest/30 text-inverse-on-surface transition-colors font-label-xs text-label-xs" onclick="navigator.clipboard.writeText('# cohort code');" type="button">
+<span class="material-symbols-outlined text-[16px]">content_copy</span>
+                Copy Code
+              </button>
+</div>
+<pre class="p-space-md font-mono text-[13px] leading-relaxed text-inverse-on-surface overflow-x-auto"><code><span class="text-secondary-fixed">import</span> pandas <span class="text-secondary-fixed">as</span> pd
+<span class="text-secondary-fixed">import</span> seaborn <span class="text-secondary-fixed">as</span> sns
+<span class="text-secondary-fixed">import</span> matplotlib.pyplot <span class="text-secondary-fixed">as</span> plt
+
+<span class="text-outline-variant"># 1. Synthesize cohort metric frame</span>
+data = {
+    <span class="text-tertiary-fixed">"week"</span>: [f<span class="text-tertiary-fixed">"W{i}"</span> <span class="text-secondary-fixed">for</span> i <span class="text-secondary-fixed">in</span> range(<span class="text-primary-fixed-dim">1</span>, <span class="text-primary-fixed-dim">9</span>)],
+    <span class="text-tertiary-fixed">"wau_k"</span>: [<span class="text-primary-fixed-dim">42.5</span>, <span class="text-primary-fixed-dim">45.1</span>, <span class="text-primary-fixed-dim">48.9</span>, <span class="text-primary-fixed-dim">53.2</span>, <span class="text-primary-fixed-dim">58.7</span>, <span class="text-primary-fixed-dim">64.0</span>, <span class="text-primary-fixed-dim">69.8</span>, <span class="text-primary-fixed-dim">75.4</span>],
+    <span class="text-tertiary-fixed">"churn_rate_pct"</span>: [<span class="text-primary-fixed-dim">8.4</span>, <span class="text-primary-fixed-dim">7.9</span>, <span class="text-primary-fixed-dim">6.5</span>, <span class="text-primary-fixed-dim">5.8</span>, <span class="text-primary-fixed-dim">5.1</span>, <span class="text-primary-fixed-dim">4.6</span>, <span class="text-primary-fixed-dim">4.3</span>, <span class="text-primary-fixed-dim">3.9</span>]
+}
+df = pd.DataFrame(data)
+
+<span class="text-outline-variant"># 2. Modern dual-axis visualization with Seaborn styling</span>
+sns.set_theme(style=<span class="text-tertiary-fixed">"whitegrid"</span>, font=<span class="text-tertiary-fixed">"Inter"</span>)
+fig, ax1 = plt.subplots(figsize=(<span class="text-primary-fixed-dim">10</span>, <span class="text-primary-fixed-dim">5</span>), dpi=<span class="text-primary-fixed-dim">150</span>)
+
+color_wau = <span class="text-tertiary-fixed">"#4648d4"</span>  <span class="text-outline-variant"># Synthetix Primary</span>
+color_churn = <span class="text-tertiary-fixed">"#ba1a1a"</span>  <span class="text-outline-variant"># Warning/Negative Churn</span>
+
+ax1.set_xlabel(<span class="text-tertiary-fixed">"Cohort Timeline"</span>, fontweight=<span class="text-tertiary-fixed">"bold"</span>)
+ax1.set_ylabel(<span class="text-tertiary-fixed">"Weekly Active Users (k)"</span>, color=color_wau, fontweight=<span class="text-tertiary-fixed">"bold"</span>)
+sns.barplot(data=df, x=<span class="text-tertiary-fixed">"week"</span>, y=<span class="text-tertiary-fixed">"wau_k"</span>, ax=ax1, color=color_wau, alpha=<span class="text-primary-fixed-dim">0.85</span>)
+
+ax2 = ax1.twinx()
+ax2.set_ylabel(<span class="text-tertiary-fixed">"Churn Rate (%)"</span>, color=color_churn, fontweight=<span class="text-tertiary-fixed">"bold"</span>)
+sns.lineplot(data=df, x=<span class="text-tertiary-fixed">"week"</span>, y=<span class="text-tertiary-fixed">"churn_rate_pct"</span>, ax=ax2, color=color_churn, marker=<span class="text-tertiary-fixed">"o"</span>, linewidth=<span class="text-primary-fixed-dim">2.5</span>)
+
+plt.title(<span class="text-tertiary-fixed">"Synthetix Retention: WAU Expansion vs Churn Attenuation"</span>, pad=<span class="text-primary-fixed-dim">16</span>)
+plt.tight_layout()
+plt.show()</code></pre>
+</div>
+<!-- Bottom Action Toolbar -->
+<div class="flex items-center justify-between pt-space-xs text-on-surface-variant font-label-sm">
+<div class="flex items-center gap-space-xs">
+<button class="p-1.5 rounded-lg hover:bg-surface-container hover:text-on-surface transition-colors" title="Copy Message" type="button">
+<span class="material-symbols-outlined text-[18px]">content_copy</span>
+</button>
+<button class="p-1.5 rounded-lg hover:bg-surface-container hover:text-on-surface transition-colors" title="Helpful (Thumbs up)" type="button">
+<span class="material-symbols-outlined text-[18px]">thumb_up</span>
+</button>
+<button class="p-1.5 rounded-lg hover:bg-surface-container hover:text-on-surface transition-colors" title="Unhelpful (Thumbs down)" type="button">
+<span class="material-symbols-outlined text-[18px]">thumb_down</span>
+</button>
+<button class="p-1.5 rounded-lg hover:bg-surface-container hover:text-on-surface transition-colors" title="Regenerate Response" type="button">
+<span class="material-symbols-outlined text-[18px]">refresh</span>
+</button>
+<button class="p-1.5 rounded-lg hover:bg-surface-container hover:text-on-surface transition-colors" title="Read Aloud" type="button">
+<span class="material-symbols-outlined text-[18px]">volume_up</span>
+</button>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="flex items-center gap-1 px-space-xs py-1 rounded-lg hover:bg-surface-container hover:text-on-surface transition-colors font-label-xs text-label-xs" type="button">
+<span class="material-symbols-outlined text-[16px]">ios_share</span> Share Snippet
+              </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Thread Item 3: Secondary User Follow-Up -->
+<div class="flex items-start justify-end gap-space-sm group">
+<div class="flex flex-col items-end max-w-2xl">
+<div class="flex items-center gap-space-xs mb-1">
+<span class="font-label-xs text-label-xs text-on-surface-variant">You</span>
+<span class="text-on-surface-variant font-label-xs text-label-xs">• 10:44 AM</span>
+</div>
+<div class="bg-surface-container px-space-md py-space-sm rounded-2xl rounded-tr-sm shadow-sm text-on-surface font-body-md text-body-md">
+            Now summarize that into a 3-bullet executive takeaway for our Board presentation.
+          </div>
+</div>
+<img class="w-8 h-8 rounded-full object-cover shadow-sm shrink-0 mt-6" data-alt="Close up professional portrait of Elena Vance smiling with a clean soft studio lighting and dark navy backdrop" src="https://lh3.googleusercontent.com/aida-public/AB6AXuARUNx-mbjvPGWQ57wE8FFiHWdkglv-5aYl8I19_hZGe-wH4pVh6ZnO1liGtsCRGfHn7vG0wie7hLN638ouGTMwv4WR6h-RUxtmxuyVCVoYcZyCl4QR1v59eS9v3SuKmmq-eXpg7O1JM_s-F-dzZfO5xcyZdrDx9VpT0566N15ENeBzsoOraKIcCOnr3iLYJKd0QcKNREHQYRDo85AvHD6i-CMXtNYrMlf8y8PBww"/>
+</div>
+<!-- Thread Item 4: AI Reasoning / Thinking Active Generation State -->
+<div class="flex items-start gap-space-sm">
+<div class="relative shrink-0 mt-1">
+<div class="w-9 h-9 rounded-full bg-gradient-to-tr from-primary to-secondary flex items-center justify-center text-on-primary shadow-sm animate-pulse">
+<span class="material-symbols-outlined text-[18px]">neurology</span>
+</div>
+</div>
+<div class="flex-1 space-y-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="font-title-md text-title-md font-semibold text-on-surface">Synthetix 4.5 Sonnet</span>
+<span class="font-label-xs text-label-xs text-primary font-medium animate-pulse">• Reasoning...</span>
+</div>
+<!-- Thought Process Expandable Accordion -->
+<div class="rounded-xl bg-surface-container-low p-space-sm shadow-sm space-y-space-xs">
+<div class="flex items-center justify-between cursor-pointer select-none">
+<div class="flex items-center gap-space-xs text-on-surface font-label-md text-label-md">
+<span class="material-symbols-outlined text-primary text-[18px] animate-spin">progress_activity</span>
+<span>Thinking Process (3 steps evaluated)</span>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-[18px]">expand_less</span>
+</div>
+<div class="pl-6 space-y-1 font-body-sm text-body-sm text-on-surface-variant">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-emerald-500 text-[14px]">check_circle</span>
+<span>Distilled 8 weeks of cohort velocity metrics</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-emerald-500 text-[14px]">check_circle</span>
+<span>Extracted board-level risk indicators and ARR implications</span>
+</div>
+<div class="flex items-center gap-2 text-primary font-medium">
+<span class="w-2 h-2 rounded-full bg-primary animate-ping"></span>
+<span>Formatting high-impact executive concise bullets...</span>
+</div>
+</div>
+</div>
+<!-- Pulsing Shimmer Generating Indicators -->
+<div class="flex items-center gap-2 px-space-sm py-2">
+<div class="flex gap-1.5 items-center">
+<span class="w-2 h-2 rounded-full bg-primary animate-bounce [animation-delay:-0.3s]"></span>
+<span class="w-2 h-2 rounded-full bg-secondary animate-bounce [animation-delay:-0.15s]"></span>
+<span class="w-2 h-2 rounded-full bg-tertiary animate-bounce"></span>
+</div>
+<span class="font-label-md text-label-md text-on-surface-variant italic">Synthetix is finalizing synthesized output...</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Floating Ambient Prompt Dock -->
+<div class="fixed bottom-0 left-72 right-0 px-margin-sm lg:px-margin pb-4 pointer-events-none z-30">
+<div class="max-w-4xl mx-auto pointer-events-auto">
+<!-- Dock Container with Layered Elevation Shadow & Frosted Glass -->
+<div class="relative bg-surface/90 backdrop-blur-xl rounded-2xl shadow-xl overflow-hidden p-space-sm">
+<!-- Top Dock Sub-Toolbar / Modes & Token Meta -->
+<div class="flex items-center justify-between px-space-xs pb-space-xs font-label-xs text-label-xs">
+<div class="flex items-center gap-space-xs overflow-x-auto">
+<button class="flex items-center gap-1 px-space-xs py-1 rounded-full bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors" type="button">
+<span class="material-symbols-outlined text-[14px] text-primary">travel_explore</span>
+<span>Web Search</span>
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+</button>
+<button class="flex items-center gap-1 px-space-xs py-1 rounded-full bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors" type="button">
+<span class="material-symbols-outlined text-[14px] text-secondary">psychology_alt</span>
+<span>Deep Reasoning</span>
+</button>
+<button class="flex items-center gap-1 px-space-xs py-1 rounded-full bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors" type="button">
+<span class="material-symbols-outlined text-[14px] text-tertiary">terminal</span>
+<span>Code Interpreter</span>
+</button>
+</div>
+<div class="hidden sm:flex items-center gap-space-xs text-on-surface-variant font-mono">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span>1,240 / 128k context</span>
+</div>
+</div>
+<!-- Chat Textarea Input Area -->
+<div class="relative mt-1">
+<textarea class="w-full bg-transparent resize-none text-on-surface placeholder:text-outline focus:outline-none font-body-md text-body-md px-space-xs py-1" placeholder="Ask me anything... (Type '/' for system tools, '@' to mention data)" rows="2"></textarea>
+</div>
+<!-- Bottom Controls & Execution Triggers -->
+<div class="flex items-center justify-between pt-space-xs mt-1">
+<!-- Media & Attachment Controls -->
+<div class="flex items-center gap-1">
+<button class="p-2 rounded-xl text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" title="Attach file (PDF, CSV, Python)" type="button">
+<span class="material-symbols-outlined text-[20px]">attach_file</span>
+</button>
+<button class="p-2 rounded-xl text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" title="Upload Image / Diagram" type="button">
+<span class="material-symbols-outlined text-[20px]">image</span>
+</button>
+<button class="p-2 rounded-xl text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors relative" title="Voice Input" type="button">
+<span class="material-symbols-outlined text-[20px]">mic</span>
+<span class="absolute top-2 right-2 w-1.5 h-1.5 bg-primary rounded-full"></span>
+</button>
+<div class="h-4 w-px bg-surface-container-highest mx-1"></div>
+<button class="hidden sm:flex items-center gap-1 text-on-surface-variant hover:text-on-surface px-space-xs py-1 rounded-lg text-label-xs font-label-xs hover:bg-surface-container" type="button">
+<span class="material-symbols-outlined text-[16px]">tune</span>
+              Parameters
+            </button>
+</div>
+<!-- Shortcuts & Send Action -->
+<div class="flex items-center gap-space-sm">
+<span class="hidden md:inline font-label-xs text-label-xs text-outline">
+<kbd class="px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant font-mono">↵</kbd> Send, <kbd class="px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant font-mono">⇧↵</kbd> New line
+            </span>
+<button class="w-10 h-10 rounded-full bg-gradient-to-r from-primary to-secondary text-on-primary flex items-center justify-center shadow-md hover:brightness-110 active:scale-95 transition-all" title="Execute Prompt" type="button">
+<span class="material-symbols-outlined text-[20px]">arrow_upward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Legal / AI Safety Advisory Disclaimer -->
+<div class="text-center mt-2">
+<p class="font-label-xs text-label-xs text-outline">
+          Synthetix AI can make mistakes. Verify critical facts, statistical models, and executable code before production deployment.
+        </p>
+</div>
+</div>
+</div>
+</div></main></div></body></html>
